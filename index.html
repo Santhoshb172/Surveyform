@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey form</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body{
+            margin: 10px;
+            padding: 10px 200px;
+        }
+        .container {
+            margin: 30px;
+            border: 1px solid lightgray;
+            width: fit-content;
+            padding: 30px;
+            font-family: 'Arial Narrow', Arial, sans-serif;
+            
+        }
+
+        td {
+            padding-left: 30px;
+        }
+
+        .table1 {
+            width: fit-content;
+        }
+
+        .table2 {
+            width: 100%;
+        }
+
+        .topic {
+            text-align: start;
+            padding: 0%;
+        }
+
+        #text {
+            width: 100%;
+        }
+
+        .highlight {
+            background-color: lightgray;
+        }
+        .checked{
+            color: yellow;
+        }
+       
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <form>
+            <div class="row">
+                <div class="col">
+                    <strong>Name<span style="color : red">*</span></strong>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <input type="text" required>
+                </div>
+                <div class="col-4">
+                    <input type="text" required>
+                </div>
+            </div>
+            <div class="row" style="margin-bottom: 10px;">
+                <div class="col-4">
+                    <small>First</small>
+                </div>
+                <div class="col-4">
+                    <small>Last</small>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <strong>Email<span style="color: red;">*</span></strong>
+                </div>
+            </div>
+            <div class="row" style="margin-bottom: 10px;">
+                <div class="col">
+                    <input type="email" style="padding-left: 250px" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <strong>Your Experience<span style="color: red;">*</span></strong>
+                </div>
+            </div>
+            <div class="row" style="margin-bottom: 10px;">
+                <div class="col">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                </div>
+            </div>
+            <div class="row" style="margin-bottom: 10px;">
+                <div class="col">
+                    <small>Overall, how would you rate your experience with us?</small>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <strong>How satisfied are you with<span style="color:red;">*</span></strong>
+                </div>
+            </div>
+            <div class="row" style="margin-bottom: 10px;">
+                <div class="col">
+                    <table class="table1">
+                        <tr>
+                            <td></td>
+                            <td style="text-align: center;padding-left: 65px;">Very Unsatisfied</td>
+                            <td style="text-align: center;">Unsatisfied</td>
+                            <td style="text-align: center;">Neutral</td>
+                            <td style="text-align: center;">Satisfied</td>
+                            <td style="text-align: center;">Very satisfied</td>
+                        </tr>
+                        <tr class="highlight">
+                            <td class="topic"><label for="Purschase" style="padding-left: 10px;">Purshace</label></td>
+                            <td style="text-align: center;padding-left: 65px;"><input type="radio" name="Purshace"
+                                    required></td>
+                            <td style="text-align: center;"><input type="radio" name="Purshace"></td>
+                            <td style="text-align: center;"><input type="radio" name="Purshace"></td>
+                            <td style="text-align: center;"><input type="radio" name="Purshace"></td>
+                            <td style="text-align: center;"><input type="radio" name="Purshace"></td>
+                        </tr>
+                        <tr>
+                            <td class="topic"><label for="Service" style="padding-left: 10px;">Service</label></td>
+                            <td style="text-align: center;padding-left: 65px;"><input type="radio" name="Service"
+                                    required></td>
+                            <td style="text-align: center;"><input type="radio" name="Service"></td>
+                            <td style="text-align: center;"><input type="radio" name="Service"></td>
+                            <td style="text-align: center;"><input type="radio" name="Service"></td>
+                            <td style="text-align: center;"><input type="radio" name="Service"></td>
+                        </tr>
+                        <tr class="highlight">
+                            <td class="topic"><label for="CompanyOverall" style="padding-left: 10px;">Company Overall</label></td>
+                            <td style="text-align: center;padding-left: 65px;"><input type="radio" name="CompanyOverall"
+                                    required></td>
+                            <td style="text-align: center;"><input type="radio" name="CompanyOverall"></td>
+                            <td style="text-align: center;"><input type="radio" name="CompanyOverall"></td>
+                            <td style="text-align: center;"><input type="radio" name="CompanyOverall"></td>
+                            <td style="text-align: center;"><input type="radio" name="CompanyOverall"></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="row" style="margin-bottom: 10px;">
+                <div class="col">
+                    <strong>How likely are you with<span style="color: red;">*</span></strong>
+                </div>
+            </div>
+            <div class="row" style="margin-bottom: 10px;">
+                <div class="col">
+                    <table class="table2">
+
+                        <tr>
+                            <td></td>
+                            <td style="text-align: center;">Very Unlikely</td>
+                            <td style="text-align: center;">Unlikely</td>
+                            <td style="text-align: center;">Neutral</td>
+                            <td style="text-align: center;">Likely</td>
+                            <td style="text-align: center;">Very Likely</td>
+                        </tr>
+                        <tr class="highlight">
+                            <td class="topic"><label for="Buy From Us Again" style="padding-left: 10px;">Buy from us again</label></td>
+                            <td style="text-align: center;"><input type="radio" name="Buy From Us Again" required></td>
+                            <td style="text-align: center;"><input type="radio" name="Buy From Us Again"></td>
+                            <td style="text-align: center;"><input type="radio" name="Buy From Us Again"></td>
+                            <td style="text-align: center;"><input type="radio" name="Buy From Us Again"></td>
+                            <td style="text-align: center;"><input type="radio" name="Buy From Us Again"></td>
+                        </tr>
+                        <tr>
+                            <td class="topic"><label for="producttoothers" style="padding-left: 10px;">Recommend our<br>product to others</label>
+                            </td>
+                            <td style="text-align: center;"><input type="radio" name="producttoothers" required></td>
+                            <td style="text-align: center;"><input type="radio" name="producttoothers"></td>
+                            <td style="text-align: center;"><input type="radio" name="producttoothers"></td>
+                            <td style="text-align: center;"><input type="radio" name="producttoothers"></td>
+                            <td style="text-align: center;"><input type="radio" name="producttoothers"></td>
+                        </tr>
+                        <tr class="highlight">
+                            <td class="topic"><label for="Companytoothers" style="padding-left: 10px;">Recommend our<br>company to others</label>
+                            </td>
+                            <td style="text-align: center;"><input type="radio" name="Companytoothers" required></td>
+                            <td style="text-align: center;"><input type="radio" name="Companytoothers"></td>
+                            <td style="text-align: center;"><input type="radio" name="Companytoothers"></td>
+                            <td style="text-align: center;"><input type="radio" name="Companytoothers"></td>
+                            <td style="text-align: center;"><input type="radio" name="Companytoothers"></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="row" style="margin-bottom: 10px;">
+                <div class="col">
+                    <strong>
+                        Additional comments or suggestions
+                    </strong>
+                </div>
+            </div>
+            <div class="row" style="margin-bottom: 10px;">
+                <div class="col">
+                    <textarea id="text" rows="3" cols="40"></textarea>
+                </div>
+            </div>
+            <div class="row" style="margin-bottom: 10px;">
+                <div class="col">
+                    <button type="submit">Submit</button>
+                </div>
+            </div>
+        </form>
+
+    </div>
+    
+</body>
+
+</html>
